@@ -1,5 +1,7 @@
 # IDE configs
 .vscode
+.vs/*
+.vs
 **/__pycache__
 .idea/workspace.xml
 

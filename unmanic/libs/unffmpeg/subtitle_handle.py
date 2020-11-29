@@ -86,7 +86,7 @@ class SubtitleHandle(object):
                     # TODO: Check if it can be re-encoded. It is not possible to switch between image and text format
                     # If dest container supports the current subtitle codec, just copy it
                     self.subtitle_args['streams_to_encode'] = self.subtitle_args['streams_to_encode'] + [
-                        "-c:s:{}".format(subtitle_tracks_count), "{}".format(supported_subtitles[0])
+                        "-c:s:{}".format(subtitle_tracks_count), "copy"
                     ]
                     subtitle_tracks_count += 1
 
